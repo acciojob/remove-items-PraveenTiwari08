@@ -1,8 +1,12 @@
 //your JS code here. If required.
 
-function delete(){
-let colorSelect = document.getElementById("colorSelect").value;
+function removeSelectedColor(){
+  var selectElement = document.getElementById("colorSelect");
 
-	delete colorSelect;
+    // Get the selected option
+    var selectedOption = selectElement.options[selectElement.selectedIndex];
+
+    // Remove the selected option
+    selectElement.removeChild(selectedOption);
 	
 }
